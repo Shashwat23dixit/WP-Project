@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+   <link rel = "icon" href = "images/logo.png" type = "image/png">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Restaurant Website Project</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+</head>
+<body>
+   
+
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo">Pizzaro</a>
+
+      <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#menu">Menu</a>
+         <a href="#order">Order</a>
+         <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="icons">
+         <i class='bx bx-moon change-theme' id="theme-button"></i>
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <!-- <div id="order-btn" class="fas fa-box"></div> -->
+         <div id="cart-btn" class="fas fa-shopping-cart"><span></span></div> 
+
+      </div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>Close</span></div>
+
+      <div class="user">
+         <p><span>You are not Registered! Register Now</span></p>
+      </div>
+
+      <!-- <div class="display-orders">
+         <p>Farm House Pizza <span>( ₹300/- x 2 )</span></p>
+         <p>Greek Pizza <span>( ₹200/- x 1 )</span></p>
+         <p>Deluxe Veggie<span>( ₹400/- x 4 )</span></p>
+         <p>Double Cheese Pizza <span>( ₹200/- x 1 )</span></p>
+      </div> -->
+
+      <div class="flex">
+
+            <form action="/addname" method="post">
+            <h3>Register now</h3>
+            <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="phone_number" name="phone" required class="box" placeholder="enter your phone number" maxlength="20">
+            <input type="submit" value="Submit" name="register" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- <div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>Close</span></div>
+
+      <h3 class="title"> My orders </h3>
+
+      <div class="box">
+         <p>Placed on : <span>08/04/2022</span> </p>
+         <p>Name : <span>Shubham Kumar</span> </p>
+         <p> Phone Number : <span>9929595708</span></p>
+         <p>Address : <span>67, NH 48, Kapriwas, Haryana 122413</span></p>
+         <p>Payment method : <span>Cash on Delivery</span></p>
+         <p>Your orders : <span>pizza-1 ₹300/- x 2, pizza - 3 ₹200/- x 1, pizza - 6 ₹400/- x 4, pizza - 7, ₹200/- x 1</span></p>
+         <p>Total price : <span>₹1100/-</span></p>
+         <p>Payment status : <span style="color: var(--red);">pending</span> </p>
+      </div>
+
+   </section>
+
+</div> -->
+
+<!-- <div class="shopping-cart">
+
+   <section>
+
+      <div id="close-cart"><span>Close</span></div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-1.jpg" alt="">
+         <div class="content">
+            <p>Farm House Pizza  <span><br>( ₹300/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-3.jpg" alt="">
+         <div class="content">
+            <p>Greek Pizza <span><br>( ₹200/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-6.jpg" alt="">
+         <div class="content">
+            <p>Deluxe Veggie<span><br>( ₹400/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-7.jpg" alt="">
+         <div class="content">
+            <p>Double Cheese Pizza <span><br>( ₹200/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               
+            </form>
+         </div>
+      </div>
+
+      <a href="#order" class="btn">Order now</a>
+
+   </section>
+
+</div> -->
+
+<div class="home-bg">
+
+   <section class="home" id="home">
+
+      <div class="slide-container">
+
+         <div class="slide active">
+            <div class="image">
+               <img src="images/home-img-1.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Homemade Pepperoni Pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/home-img-2.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Pizza With Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Mascarpone And Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Cheese Burst Pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/home-img-2.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Pizza With Mushrooms (Non-Veg)</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">about us</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/about-1.svg" alt="">
+         <h3>Made with love</h3>
+         <p>The focus, to be sure, is on one of the most affordable dishes at a given venue. This would be a reasonably boring affair if the column turned into a weekly assessment on olives and edamame. So in many cases, the cheapest dish won’t be the lowest-price item overall, but rather the lowest-cost pasta, lunch bowl, or toast.</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-2.svg" alt="">
+         <h3>30 minutes delivery</h3>
+         <p>We here at Pizzaro focus on timely delivery of your preferred Pizzas so that you can enjoy our delicious Pizza's. So we have a target to reach our Customers within 30 minutes when the order is placed. This attracts our customers to order from our website and therefore we have a major benefit in the market. </p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-3.svg" alt="">
+         <h3>Share with freinds</h3>
+         <p>There are certain things you only share with your best friend. It feels like no one else understands, but there is one person who is always there for you. You can reveal anything to your best friend knowing that you will not be judged. Because of that, there are certain activities you will only do together for the ultimate fun!</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section id="menu" class="menu">
+
+   <h1 class="heading">our menu</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="price">₹<span>200</span>/-</div>
+         <img src="images/pizza-1.jpg" alt="">
+         <div class="name">Greek Pizza <p><br></p></div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" >
+         </form>
+         
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>400</span>/-</div>
+         <img src="images/pizza-2.jpg" alt="">
+         <div class="name">Margherita<p><br></p></div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" >
+         </form>
+   
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>200</span>/-</div>
+         <img src="images/pizza-3.jpg" alt="">
+         <div class="name">Double Cheese Margherita</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" >
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>300</span>/-</div>
+         <img src="images/pizza-4.jpg" alt="">
+         <div class="name">Farm House Pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" >
+         </form>
+
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>200</span>/-</div>
+         <img src="images/pizza-5.jpg" alt="">
+         <div class="name">Perry Paneer</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" >
+         </form>
+      
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>400</span>/-</div>
+         <img src="images/pizza-6.jpg" alt="">
+         <div class="name">Deluxe Veggie</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" >
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>200</span>/-</div>
+         <img src="images/pizza-7.jpg" alt="">
+         <div class="name">Cheese N Corn</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" >
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>300</span>/-</div>
+         <img src="images/pizza-8.jpg" alt="">
+         <div class="name">Paneer Makhani</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" >
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>400</span>/-</div>
+         <img src="images/pizza-9.jpg" alt="">
+         <div class="name">Veggie Paradise</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" >
+         </form>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <h1 class="heading">order now</h1>
+
+   <form action="/details" method="post">
+
+   <div class="flex">
+         <div class="inputBox">
+            <span>Your name :</span>
+            
+            <input type="text" name="oname" class="box" required placeholder="Enter your name" maxlength="20">
+         </div>
+         <div class="inputBox">
+            <span>Your number :</span>
+            <input type="number" name="onum" class="box" required placeholder="Enter your number" min="0">
+         </div>
+         <div class="inputBox">
+            <span>Payment method</span>
+            <select name="pay" class="box">
+               <option value="cash on delivery">cash on delivery</option>
+               <option value="credit card">credit card</option>
+               <option value="paytm">paytm</option>
+               <option value="paypal">paypal</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>Address :</span>
+            <input type="text" name="add" class="box" required placeholder="Enter your address" maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>Pizza Type</span>
+            <select name="ptype" class="box">
+               <option value="Regular">Regular</option>
+               <option value="MEdium">Medium</option>
+               <option value="Large">Large</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>Pin code :</span>
+            <input type="number" name="code" class="box" required placeholder="e.g. 123456" min="0">
+         </div>
+      </div>
+
+      <input type="submit" value="order now" class="btn" name="o">
+   </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">FAQ's</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <span>How does it work?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Restaurants are available according to your delivery Address. So as soon as you place the order from our website the restaurants start preparing the orders.
+
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>How long does it take for delivery?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Typically, it takes about 45 minutes to an hour, but the delivery time can vary based on volume and time of day. We strongly recommend placing lunch, catering, and larger orders in advance to secure your desired delivery time.
+
+
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>How do I redeem a coupon code?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Enter redemption code in the discount box during checkout. A customer account is required to use a coupon code.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span> Can I cancel my order?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Orders cannot be cancelled once they have been placed with the restaurant. If you need to cancel or make changes to an advanced order, please contact a customer service representative.
+         </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>Phone number</h3>
+         <p>+91-9929595708</p>
+         <p>+91-9394653749</p>
+         <p><br></p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>Our address</h3>
+         <p>67, NH 48, Kapriwas, Haryana 122413</p>
+         <p><br></p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>Opening hours</h3>
+         <p>09:00 AM to 12:00 PM</p>
+         <p><br></p>
+         <p><br></p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>E-mail address</h3>
+         <p>shashwatdixit80@gmail.com</p>
+         <p>varshithsaigali40@gmail.com</p>
+         <p>shubhamkumar50@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      &copy; copyright @ 2022 by <span>Shashwat Varshith Shubham</span> | All Rights Reserved!
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

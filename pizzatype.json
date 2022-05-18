@@ -1,0 +1,48 @@
+[
+{
+    "name" : "Greek Pizza",
+    "price" : 200,
+    "Category" : "Small"
+},
+{
+    "name" : "Margherita",
+    "price" : 400,
+    "Category" : "Medium"
+},
+{
+    "name" : "Double Cheese Margherita",
+    "price" : 200,
+    "Category" : "Small"
+},
+{
+    "name" : "Farm House Pizza",
+    "price" : 300,
+    "Category" : "Small"
+},
+{
+    "name" : "Perry Paneer",
+    "price" : 200,
+    "Category" : "Medium"
+},
+{
+    "name" : "Deluxe Veggie",
+    "price" : 400,
+    "Category" : "Medium"
+},
+{
+    "name" : "Cheese N Corn",
+    "price" : 200,
+    "Category" : "Small"
+},
+{
+    "name" : "Paneer Makhani",
+    "price" : 300,
+    "Category" : "Small"
+},
+{
+    "name" : "Veggie Paradise",
+    "price" : 400,
+    "Category" : "Medium"
+}
+]
+
